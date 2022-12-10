@@ -10,7 +10,8 @@ const Banner = () => {
         <p className='text-lg'>Hey There !</p>
         <p className='text-4xl md:text-5xl  font-semibold'>I am Saruar Alam</p>
         <p className='text-lg'>React Developer</p>
-        <Link to='/contact' className='block'><button className='border px-4 py-1 rounded-full bg-indigo-500 hover:bg-indigo-600 text-white duration-500'>Contact me</button></Link>
+        {/* <Link to='/contact' className='block'><button className='border px-4 py-1 rounded-full bg-indigo-500 hover:bg-indigo-600 text-white duration-500'>Contact me</button></Link> */}
+        <a href='https://form.jotform.com/223434222605042' className='block'><button className='border px-4 py-1 rounded-full bg-indigo-500 hover:bg-indigo-600 text-white duration-500'>Contact me</button></a>
       </div>
 
       <div className='w-1/2 mx-auto mt-10'>
