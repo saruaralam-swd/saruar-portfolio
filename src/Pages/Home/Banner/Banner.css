@@ -1,6 +1,7 @@
 .bg{
-  background-image: url('../../../assets/banner-bg.jpg');
+  background-image: url('../../../assets/banner-bg2.png');
   background-repeat: no-repeat;
-  background-size: contain;
-  object-fit: cover;
+  background-size: 50%;
+  background-position: center right;
 }
+

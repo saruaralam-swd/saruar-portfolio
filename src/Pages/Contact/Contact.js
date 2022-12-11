@@ -1,5 +1,5 @@
 import React from 'react';
-import img from '../../assets/my-img.jpeg';
+// import img from '../../assets/contact.svg';
 
 const Contact = () => {
   return (
@@ -7,9 +7,9 @@ const Contact = () => {
       <h2 className='text-center text-4xl underline'>Get in Touch</h2>
       
       <div className='grid md:grid-cols-2 lg:grid-cols-3 mt-10'>
-        <div className='p-4 md:pl-0'>
+        {/* <div className='p-4 md:pl-0'>
           <img className='sm:w-3/4 border-2 border-indigo-500 rounded-md' src={img} alt="" />
-        </div>
+        </div> */}
 
         <div className=' p-4 lg:col-span-2'>
           <h2 className='text-2xl font-semibold'>Contact Me</h2>
@@ -43,3 +43,10 @@ const Contact = () => {
 };
 
 export default Contact;
+
+/* 
+
+<p>I am a Front-end Web Developer. I love to use my creativity and make something new. That's why I love to work with React.js . Over the last year, I gather knowledge in various parts of web development such as React, MongoDB, firebase, Node, Express, ES6, JavaScript, CSS3, HTML5 from "programming-hero". My ultimate goal is to become an awesome full-stack web developer and also can handle the back-end smoothly.</p>
+animation ta add korty hove
+
+banner img : md:w-2/3 lg:w-1/2*/
