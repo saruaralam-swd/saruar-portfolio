@@ -1,15 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaHome } from "react-icons/fa";
 
 const Header = () => {
+
   const menuitem = <>
-    <li><Link to='/'>Home</Link></li>
-    <li><Link to='/'>Blog</Link></li>
-    <li><a href='#projects'>Projects</a></li>
+    <li><Link to='/'><FaHome /></Link></li>
+    <li><Link to='/blog'>Blog</Link></li>
+    <li><Link to='/projects'>Projects</Link></li>
   </>
 
   return (
-    <div className="navbar border-b-2">
+    <div className="navbar bg-slate-100/60 backdrop-blur border-b-2 sticky top-0 ">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -29,7 +31,7 @@ const Header = () => {
 
       <div className="navbar-end">
         <a href="https://drive.google.com/file/d/1Mjz340Y_nacMzG6Hp0F8K2S8PKZZAktN/view?usp=share_link" target='_blank' rel="noreferrer">
-          <button className='border px-4 py-1 rounded-full hover:border-indigo-500 duration-500'>My Resume</button>
+          <button className='border px-4 py-1 rounded-full border-indigo-500 hover:bg-indigo-500 hover:text-white duration-500'>My Resume</button>
         </a>
       </div>
     </div>
