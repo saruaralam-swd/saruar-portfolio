@@ -2,8 +2,10 @@ import React from 'react';
 // import project10 from '../../assets/projects/10.png'
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import { Link, useLoaderData } from 'react-router-dom';
+import useTitle from '../../hooks/useTitle';
 
 const Projects = () => {
+  useTitle('Projects')
   const projects = useLoaderData();
 
   return (

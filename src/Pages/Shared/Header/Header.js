@@ -6,12 +6,13 @@ const Header = () => {
 
   const menuitem = <>
     <li><Link to='/'><FaHome /></Link></li>
+    <li><Link to='/aboutMe'>About me</Link></li>
     <li><Link to='/blog'>Blog</Link></li>
     <li><Link to='/projects'>Projects</Link></li>
   </>
 
   return (
-    <div className="navbar bg-slate-100/60 backdrop-blur border-b-2 sticky top-0 ">
+    <div className="navbar bg-slate-100/60 backdrop-blur border-b-2 sticky top-0 px-5">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
