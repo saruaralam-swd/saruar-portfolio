@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Noto+Sans&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Noto+Sans&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 
 body {
-  font-family: 'Fira Sans', sans-serif;
+  /* font-family: 'Fira Sans', sans-serif; */
+  font-family: 'Lexend Deca', sans-serif;
 }
