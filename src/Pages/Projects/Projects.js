@@ -9,7 +9,7 @@ const Projects = () => {
   const projects = useLoaderData();
 
   return (
-    <div className='my-10 p-5 md:p-0'>
+    <div className='my-10 px-5'>
       <h2 className="text-3xl font-semibold mb-5">My Projects</h2>
 
       <div className='grid md:grid-cols-2 gap-10'>
@@ -21,7 +21,7 @@ const Projects = () => {
                 <h2 className='font-semibold mt-5 flex justify-between '>
                   <span className='text-lg'>{project?.title}</span>
                   <span className='flex items-center gap-5'>
-                    <span><a className='inline-block' href={project?.github} target='_blank' rel="noreferrer"><FaGithub className='inline w-6 h-6' /></a></span>
+                    <span><a className='inline-block' href={project?.github} target='_blank' rel="noreferrer"><FaGithub className='inline w-6 h-6' title='Github code' /></a></span>
                     <span><a className='inline-block' href="https://learning-platform-client-f6cbc.web.app/" target='_blank' rel="noreferrer"><FaExternalLinkAlt className='inline w-5 h-5' title='live preview' /></a></span>
                   </span>
                 </h2>

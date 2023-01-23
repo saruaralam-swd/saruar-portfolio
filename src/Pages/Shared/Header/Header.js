@@ -12,7 +12,7 @@ const Header = () => {
   </>
 
   return (
-    <div className="navbar bg-slate-100/60 backdrop-blur border-b-2 sticky top-0 px-5">
+    <div className="navbar bg-slate-100/60 backdrop-blur border-b-2 sticky top-0 px-5 z-[999]">
       <div className="navbar-start">
         {/* mobile */}
         <div className="dropdown">
