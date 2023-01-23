@@ -5,7 +5,7 @@ import { FaHome } from "react-icons/fa";
 const Header = () => {
 
   const menuitem = <>
-    <li><Link to='/'><FaHome /></Link></li>
+    <li><Link to='/'><FaHome className='md:w-6 md:h-6'/> <span className='lg:hidden'>Home</span> </Link></li>
     <li><Link to='/aboutMe'>About me</Link></li>
     <li><Link to='/blog'>Blog</Link></li>
     <li><Link to='/projects'>Projects</Link></li>
@@ -14,15 +14,18 @@ const Header = () => {
   return (
     <div className="navbar bg-slate-100/60 backdrop-blur border-b-2 sticky top-0 px-5">
       <div className="navbar-start">
+        {/* mobile */}
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            <svg className="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" /></svg>
           </label>
+
           <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
             {menuitem}
           </ul>
         </div>
 
+        {/* Desktop */}
         <div className='lg:flex hidden'>
           <ul className="menu menu-horizontal">
             {menuitem}
