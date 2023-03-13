@@ -26,12 +26,12 @@ export const router = createBrowserRouter([
       },
       {
         path: '/projects',
-        loader: () => fetch('http://localhost:5000/projects'),
+        loader: () => fetch('https://saruar-portfolio-server.vercel.app/projects'),
         element: <Projects></Projects>
       },
       {
         path: '/project-details/:id',
-        loader: ({ params }) => fetch(`http://localhost:5000/project-details/${params.id}`),
+        loader: ({ params }) => fetch(`https://saruar-portfolio-server.vercel.app/project-details/${params.id}`),
         element: <ProjectDetails></ProjectDetails>
       },
       {
