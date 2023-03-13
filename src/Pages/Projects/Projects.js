@@ -1,5 +1,4 @@
 import React from 'react';
-// import project10 from '../../assets/projects/10.png'
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import { Link, useLoaderData } from 'react-router-dom';
 import useTitle from '../../hooks/useTitle';
@@ -12,17 +11,17 @@ const Projects = () => {
     <div className='my-10 px-5'>
       <h2 className="text-3xl font-semibold mb-5">My Projects</h2>
 
-      <div className='grid md:grid-cols-2 gap-10'>
+      <div className='grid md:grid-cols-3 gap-10'>
         {
           projects.map(project =>
-            <div className='border rounded-md shadow-xl' key={project._id}>
-              <img src={project?.tumbleImg} alt="" className='rounded-md' />
-              <div className='p-6'>
-                <h2 className='font-semibold mt-5 flex justify-between '>
-                  <span className='text-lg'>{project?.title}</span>
+            <div key={project._id} className="border rounded-md hover:shadow-md " >
+              <div className='h-[300px] bg-top hover:bg-bottom duration-1000 ease-linear bg-no-repeat bg-cover' style={{ backgroundImage: `url(${project?.tumbleImg})` }}></div>
+              <div className='p-5'>
+                <h2 className='font-semibold flex justify-between'>
+                  <span className='text-lg'>{project?.title.length > 30 ? project?.title.slice(0, 30) + '...' : project.title}</span>
                   <span className='flex items-center gap-5'>
                     <span><a className='inline-block' href={project?.github} target='_blank' rel="noreferrer"><FaGithub className='inline w-6 h-6' title='Github code' /></a></span>
-                    <span><a className='inline-block' href="https://learning-platform-client-f6cbc.web.app/" target='_blank' rel="noreferrer"><FaExternalLinkAlt className='inline w-5 h-5' title='live preview' /></a></span>
+                    <span><a className='inline-block' href={project?.live} target='_blank' rel="noreferrer"><FaExternalLinkAlt className='inline w-5 h-5' title='live preview' /></a></span>
                   </span>
                 </h2>
 
