@@ -1,15 +1,19 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import { Link, useLoaderData } from 'react-router-dom';
+import useProjects from '../../hooks/useProjects';
 import useTitle from '../../hooks/useTitle';
 
 const Projects = () => {
-  useTitle('Projects')
-  const projects = useLoaderData();
+  useTitle('Projects');
+  const [projects, projectsLoader] = useProjects();
 
   return (
     <div className='my-10 px-5'>
       <h2 className="text-3xl font-semibold mb-5">My Projects</h2>
+      {
+        projectsLoader && <div className='text-center text-5xl'>Loading...</div>
+      }
 
       <div className='grid md:grid-cols-3 gap-10'>
         {
