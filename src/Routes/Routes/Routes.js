@@ -26,7 +26,6 @@ export const router = createBrowserRouter([
       },
       {
         path: '/projects',
-        // loader: () => fetch('https://saruar-portfolio-server.vercel.app/projects'),
         element: <Projects></Projects>
       },
       {
