@@ -5,7 +5,7 @@ import { FaHome } from "react-icons/fa";
 const Header = () => {
 
   const menuitem = <>
-    <li><Link to='/'><FaHome className='md:w-6 md:h-6'/> <span className='lg:hidden'>Home</span> </Link></li>
+    <li><Link to='/'><FaHome className='md:w-6 md:h-6' /> <span className='lg:hidden'>Home</span> </Link></li>
     <li><Link to='/aboutMe'>About me</Link></li>
     <li><Link to='/blog'>Blog</Link></li>
     <li><Link to='/projects'>Projects</Link></li>
@@ -35,7 +35,8 @@ const Header = () => {
 
       <div className="navbar-end">
         <a href="https://drive.google.com/file/d/1Mjz340Y_nacMzG6Hp0F8K2S8PKZZAktN/view?usp=share_link" target='_blank' rel="noreferrer">
-          <button className='border px-4 py-1 rounded-full border-indigo-500 hover:bg-indigo-500 hover:text-white duration-500'>My Resume</button>
+          {/* <button className='border px-4 py-1 rounded-full border-indigo-500 hover:bg-indigo-500 hover:text-white duration-500'>My Resume</button> */}
+          <button className='border px-4 py-1 rounded-full bg-indigo-500 text-white hover:bg-white hover:border-indigo-500 hover:text-black duration-500'>My Resume</button>
         </a>
       </div>
     </div>
