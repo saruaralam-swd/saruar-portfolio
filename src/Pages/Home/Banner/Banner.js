@@ -1,15 +1,15 @@
 import React from "react";
 import "./Banner.css";
-import img from "../../../assets/profile.png";
+import profileImage from "../../../assets/profile.png";
 import Typewriter from "typewriter-effect";
 import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs";
 
 const Banner = () => {
   return (
-    <div className="min-h-[500px] md:flex items-center p-5">
+    <div className="min-h-[500px] bg bg-no-repeat bg-cover bg-right md:bg-right-top md:flex items-center justify-center p-5">
       <div className="md:w-1/2 space-y-3 pl-14 text-center md:text-left lg:text-left py-10 md:py-0 ">
         <p className="text-xl">Hi, I'm</p>
-        <p className="text-4xl md:text-5xl font-semibold">Md. Saruar Alam</p>
+        <p className="text-4xl md:text-5xl font-semibold">Saruar Alam</p>
         <p className="font-semibold text-[#6366F1] text-2xl">
           <Typewriter
             options={{
@@ -63,7 +63,11 @@ const Banner = () => {
 
       <div className="w-1/2 mx-auto mt-10">
         {/* <img className='mx-auto w-full md:w-[70%] lg:w-[66%]' src={circle} alt="" /> */}
-        <img className="mx-auto w-full md:w-2/3 lg:w-1/2" src={img} alt="" />
+        <img
+          className="mx-auto w-full md:w-2/3 lg:w-1/2"
+          src={profileImage}
+          alt=""
+        />
       </div>
     </div>
   );

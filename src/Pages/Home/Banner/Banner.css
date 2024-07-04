@@ -1,7 +1,3 @@
-.bg{
-  background-image: url('../../../assets/banner-bg2.png');
-  background-repeat: no-repeat;
-  background-size: 50%;
-  background-position: center right;
+.bg {
+  background-image: url("../../../assets/banner-bg.jpg");
 }
-
