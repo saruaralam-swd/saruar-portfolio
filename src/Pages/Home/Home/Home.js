@@ -3,6 +3,7 @@ import useTitle from "../../../hooks/useTitle";
 import Banner from "../Banner/Banner";
 import Projects from "../../Projects/Projects";
 import AboutMe from "../../AboutMe/AboutMe";
+import Contact from "../../Contact/Contact";
 
 const Home = () => {
   useTitle("Home");
@@ -12,6 +13,7 @@ const Home = () => {
       <Banner />
       <AboutMe />
       <Projects />
+      <Contact />
     </div>
   );
 };

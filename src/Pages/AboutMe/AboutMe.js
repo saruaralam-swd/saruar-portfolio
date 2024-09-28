@@ -21,7 +21,7 @@ const AboutMe = () => {
           further enriching my knowledge in the field of software engineering.
         </p>
         <p>
-          Over the past years, I have gained hands-on experience building
+          Over the last 3 years, I have gained hands-on experience building
           several highly responsive web applications using JavaScript, React,
           Node.js, Express, MongoDB, Firebase, Bootstrap, TailwindCSS, etc. I am
           familiar with Material UI, Axios, React Query, React hook form etc.
