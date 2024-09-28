@@ -9,34 +9,41 @@ import Projects from "../../Pages/Projects/Projects";
 
 export const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <Main></Main>,
     children: [
       {
-        path: '/',
-        element: <Home></Home>
+        path: "/",
+        element: <Home></Home>,
       },
       {
-        path: '/aboutMe',
-        element: <AboutMe></AboutMe>
+        path: "/home",
+        element: <Home></Home>,
       },
       {
-        path: '/blog',
-        element: <Blog></Blog>
+        path: "/aboutMe",
+        element: <AboutMe></AboutMe>,
       },
       {
-        path: '/projects',
-        element: <Projects></Projects>
+        path: "/blog",
+        element: <Blog></Blog>,
       },
       {
-        path: '/project-details/:id',
-        loader: ({ params }) => fetch(`https://saruar-portfolio-server.vercel.app/project-details/${params.id}`),
-        element: <ProjectDetails></ProjectDetails>
+        path: "/projects",
+        element: <Projects></Projects>,
       },
       {
-        path: '/contact',
-        element: <Contact></Contact>
-      }
-    ]
+        path: "/project-details/:id",
+        loader: ({ params }) =>
+          fetch(
+            `https://saruar-portfolio-server.vercel.app/project-details/${params.id}`
+          ),
+        element: <ProjectDetails></ProjectDetails>,
+      },
+      {
+        path: "/contact",
+        element: <Contact></Contact>,
+      },
+    ],
   },
 ]);

@@ -6,7 +6,6 @@ import "react-photo-view/dist/react-photo-view.css";
 const ProjectDetails = () => {
   const project = useLoaderData();
   const { title, des, features, github, images, live, techs } = project;
-  console.log(images);
 
   return (
     <div className="py-10 p-5 bg-slate-100 rounded-md">

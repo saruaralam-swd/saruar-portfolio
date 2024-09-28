@@ -2,14 +2,16 @@ import React from "react";
 import useTitle from "../../../hooks/useTitle";
 import Banner from "../Banner/Banner";
 import Projects from "../../Projects/Projects";
+import AboutMe from "../../AboutMe/AboutMe";
 
 const Home = () => {
   useTitle("Home");
 
   return (
     <div>
-      <Banner></Banner>
-      <Projects></Projects>
+      <Banner />
+      <AboutMe />
+      <Projects />
     </div>
   );
 };
