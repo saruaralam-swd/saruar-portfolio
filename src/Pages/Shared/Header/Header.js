@@ -7,7 +7,7 @@ const Header = () => {
   const routes = [
     { _id: 1, path: "/", name: "Home" },
     { _id: 2, path: "/aboutMe", name: "About Me" },
-    { _id: 3, path: "/blog", name: "Blog" },
+    { _id: 3, path: "/blogs", name: "Blogs" },
     { _id: 4, path: "/projects", name: "Projects" },
   ];
 
