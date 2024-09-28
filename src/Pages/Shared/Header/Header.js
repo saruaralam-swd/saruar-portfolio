@@ -45,7 +45,7 @@ const Header = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <button className="border px-4 py-1 mr-2 rounded-full bg-indigo-500 text-white hover:bg-white hover:border-indigo-500 hover:text-black duration-500">
+            <button className="border px-4 py-2 rounded-full bg-indigo-500 text-white hover:bg-white hover:border-indigo-500 hover:text-black duration-500">
               My Resume
             </button>
           </a>

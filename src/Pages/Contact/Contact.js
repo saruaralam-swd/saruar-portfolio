@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="my-10 w-4/5 mx-auto">
+    <div className="my-10 p-5 md:p-0 md:w-4/5 mx-auto">
       <h2 className="text-2xl text-center font-semibold">Contact Me</h2>
 
       <form className="mt-5">
@@ -35,7 +35,7 @@ const Contact = () => {
             ></textarea>
           </div>
 
-          <button className="border px-4 py-1 mr-2 rounded-full bg-indigo-500 text-white hover:bg-white hover:border-indigo-500 hover:text-black duration-500">
+          <button className="border px-4 py-2 rounded-full bg-indigo-500 text-white hover:bg-white hover:border-indigo-500 hover:text-black duration-500">
             Send
           </button>
         </div>
