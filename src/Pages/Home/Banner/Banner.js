@@ -1,6 +1,6 @@
 import React from "react";
 import "./Banner.css";
-import profileImage from "../../../assets/profile.png";
+import profileImage from "../../../assets/aboutMe2.png";
 import Typewriter from "typewriter-effect";
 import { BsFacebook, BsGithub, BsLinkedin } from "react-icons/bs";
 
