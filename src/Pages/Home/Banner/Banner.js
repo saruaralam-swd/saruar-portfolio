@@ -8,8 +8,7 @@ const Banner = () => {
   return (
     <div className="min-h-[500px] bg bg-no-repeat bg-cover bg-right md:bg-right-top md:flex items-center justify-center p-5">
       <div className="md:w-1/2 space-y-3 pl-14 text-center md:text-left lg:text-left py-10 md:py-0 ">
-        <p className="text-xl">Hi, I'm</p>
-        <p className="text-4xl md:text-5xl font-semibold">Saruar Alam</p>
+        <p className="text-4xl md:text-5xl font-semibold">Hi, I'm Saruar</p>
         <p className="font-semibold text-[#6366F1] text-2xl">
           <Typewriter
             options={{

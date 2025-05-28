@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <>
-      <nav className="flex items-center justify-between bg-slate-200 px-2">
+      <nav className="flex md:hidden items-center justify-between bg-slate-200 px-2">
         <div className="md:hidden">
           <Hamburger toggled={open} toggle={setOpen} size={30} />
         </div>
