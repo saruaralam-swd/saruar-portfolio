@@ -43,9 +43,15 @@ const Banner2Header = () => {
           </ul>
         </div>
         <div className="z-40">
-          <button className="border px-3 py-1 rounded-3xl text-[#FFA503] hover:bg-slate-300 hover:text-black duration-500">
-            My Resume
-          </button>
+          <a
+            href="https://drive.google.com/file/d/1Mjz340Y_nacMzG6Hp0F8K2S8PKZZAktN/view?usp=share_link"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button className="border px-3 py-1 rounded-3xl text-[#FFA503] hover:bg-slate-300 hover:text-black duration-500">
+              My Resume
+            </button>
+          </a>
         </div>
       </div>
     </>
