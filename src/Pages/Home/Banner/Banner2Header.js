@@ -9,7 +9,7 @@ const Banner2Header = () => {
           <Link to="/home">Saruar Alam</Link>
         </div>
         <div className=" z-40">
-          <ul className="flex items-center  gap-5 uppercase">
+          {/* <ul className="flex items-center  gap-5 uppercase">
             <NavLink
               className={({ isActive }) => (isActive ? "text-[#FFA503]" : "")}
             >
@@ -40,7 +40,7 @@ const Banner2Header = () => {
               Contact
             </NavLink>
             <li>|</li>
-          </ul>
+          </ul> */}
         </div>
         <div className="z-40">
           <a

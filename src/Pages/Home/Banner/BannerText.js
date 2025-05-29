@@ -20,13 +20,13 @@ const BannerText = () => {
       </div>
       <div className="flex justify-center mt-5">
         <div className="flex justify-center items-center gap-5 z-50">
-          <a
+          {/* <a
             rel="noreferrer"
             target="_blank"
             href="https://web.facebook.com/saruaralam2001"
           >
             <FaFacebook className="text-2xl cursor-pointer hover:text-white duration-500" />
-          </a>
+          </a> */}
           <a
             rel="noreferrer"
             target="_blank"
