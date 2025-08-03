@@ -39,12 +39,13 @@ const ProjectDetails = () => {
       </p>
 
       <div className="divider"></div>
-      <p className="font-semibold text-center">Some Images</p>
+      {/* <p className="font-semibold text-center">Some Images</p> */}
       <div className="md:px-10">
         {images.map((img, index) => (
-          <div key={index} className="mt-5 border border-indigo-500 rounded-md">
-            <h2 className=" bg-slate-500 text-white w-[70px] h-[20px] m-2 flex justify-center items-center rounded-xl">
-              img {index + 1}
+          // <div key={index} className="mt-5 border border-indigo-500 rounded-md">
+          <div key={index} className="mt-5 rounded-md">
+            <h2 className="w-fit text-center mx-auto p-2 my-2 text-black bg-slate-300 rounded-md">
+              Preview {index + 1}
             </h2>
             <PhotoProvider>
               <PhotoView src={`${img}`}>

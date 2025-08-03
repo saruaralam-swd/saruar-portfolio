@@ -12,7 +12,7 @@ const BannerText = () => {
           </h1>
 
           <p>
-            I am a front and MERN Stack developer, I can provide clean code and
+            I am MERN Stack developer, I can provide clean code and
             pixel-perfect design <br />I also make the website more and & more
             attractive with web animation
           </p>

@@ -16,7 +16,7 @@ const Projects = () => {
         setProjectsLoader(false);
         setProjects(data);
       });
-  }, []);
+  }, [projects]);
 
   return (
     <div className="my-10 px-5">
