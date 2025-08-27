@@ -3,7 +3,7 @@ import myImg from "../../assets/aboutMe.jpg";
 
 const AboutMe = () => {
   return (
-    <div className="my-10 px-5">
+    <div className="my-24 px-5">
       <h2 className="text-3xl text-center font-semibold">About me</h2>
       <div className="grid md:grid-cols-12 gap-10 px-10">
         <div className="col-span-12 lg:col-span-3 mt-10 mx-auto lg:mx-0">

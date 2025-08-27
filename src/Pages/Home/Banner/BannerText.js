@@ -4,11 +4,11 @@ import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const BannerText = () => {
   return (
-    <div>
+    <>
       <div className="flex text-center justify-center mt-40">
         <div className="z-50">
           <h1 className="text-5xl font-bold mb-5">
-            Hi, I am <span className="text-[#FFA503]">Saruar</span>
+            Hi, I am <span>Saruar</span>
           </h1>
 
           <p>
@@ -18,15 +18,16 @@ const BannerText = () => {
           </p>
         </div>
       </div>
+
       <div className="flex justify-center mt-5">
         <div className="flex justify-center items-center gap-5 z-50">
-          {/* <a
+          <a
             rel="noreferrer"
             target="_blank"
             href="https://web.facebook.com/saruaralam2001"
           >
             <FaFacebook className="text-2xl cursor-pointer hover:text-white duration-500" />
-          </a> */}
+          </a>
           <a
             rel="noreferrer"
             target="_blank"
@@ -43,17 +44,18 @@ const BannerText = () => {
           </a>
         </div>
       </div>
+
       <div className="flex justify-center mt-5">
         <a
           href="https://form.jotform.com/223434222605042"
           target="_blank"
-          className="z-50 border px-3 py-1 rounded-3xl text-[#FFA503] hover:bg-slate-300 hover:text-black duration-500"
+          className="z-50 border px-3 py-1 rounded-3xl hover:bg-slate-300 hover:text-black duration-500"
           rel="noreferrer"
         >
           <button>Contact me</button>
         </a>
       </div>
-    </div>
+    </>
   );
 };
 
